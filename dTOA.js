@@ -9,14 +9,13 @@
 ///////////////////
 //let d = "hello";
 //let e = false;
-
-//d++;
+//d++; // nan
 //e++;
 //"hello" false
 //////////////////
 //let perplexed; // perplexed is undefined (no value is assigned)
 //perplexed + 2;
-// undefined
+// nan
 //////////////////
 //et price = 2.7;
 //price.toFixed(2);
@@ -24,7 +23,8 @@
 //////////////////
 //console.log(let price = "2.7";
 //price.toFixed(2);)
-// false
+// undefind
+
 //////////////////
 isNaN(0)
 //false
@@ -32,7 +32,7 @@ isNaN(0)
 isNaN(1)
 //false
 isNaN("")
-//true
+//false*
 isNaN("string")
 //true
 isNaN("0")
@@ -50,53 +50,55 @@ isNaN("true")
 isNaN(true)
 //true
 isNaN("false")
-//true
+//false*
 isNaN(false)
-//true
+//false*
 // to illustrate why the isNaN() function is needed:
 NaN == NaN
-//true
+//false*
 ///////////////////////
 
-//!true
+///!true
 //false
-//!false
+///!false
 //true
-//!!true
+///!!true
 //true
-//!!false
+///!!false
 //false
-//!!0
+///!!0
 //false
-//!!-0
+///!!-0
 //true
-//!!1
+///!!1
 //false
-//!!-1
+///!!-1
 //true
-//!!0.1
-//false
-//!!"hello"
+///!!0.1
+//true*
+///!!"hello"
 //true
-//!!""
+///!!""
 //false
-//!!''
+///!!''
 //flase
-//!!"false"
+///!!"false"
 //true
-//!!"0"
+///!!"0"
 //true
 //////////////////
  let sample = "hello codeup"
 //console.log(sample.length) // 12
- //sample .toUpperCase //"HELLO CODEUP"
- //sample .toLowerCase(sample)//"hello codeup"
+//console.log(sample.toUpperCase("")) //"HELLO CODEUP"
+ //sample .toLowerCase("")//"hello codeup"
  //sample .substring("hello codeup", "hello codeup students")
-//sample .replace(.indexOf("c"))
-//sample .replace(.indexOf("C"))
-console.log(sample.indexOf("c"))
-console.log(sample.indexOf("p"))
-console.log(sample.substring(6,12))
+///^^ sample += "students"
+//let myvariable ="hello codeup students"
+//sample .substring(.indexOf("c"))// -1 because c does not exist
+//sample(.indexOf("C"))
+//console.log(sample.indexOf("c"))
+//console.log(sample.indexOf("p"))
+//console.log(sample.substring(6,12))
 ///////////////////
 //let p= 3
 //let tLM = p * 3
@@ -104,15 +106,22 @@ console.log(sample.substring(6,12))
 //let hUR = p * 1
 //console.log(bB + hUR + tLM)
 // total = 27
-//let gOO = 400
-//let aMA = 380
-//let fAC = 350
-//console.log((gOO*6)+(aMA*4)+(fAC*10))
-///////////////////
+//////^^ let tLMCost = tLM * p for each var
+//let gOO = 400;
+//let aMA = 380;
+//let fAC = 350;
+//let gOOHours = 6;
+//let aMAHours =4;
+//let fACHours =10;
+//let totalPay = ((gOO*gOOHours)+(aMA*aMAHours)+(fAC*fACHours));
+//console.log(totalPay)
+//console.log(`your total pay is $${totalPay}`)
+//total 7420
+///////////////////Q4
 let username = 'codeup';
 let password = 'notastrongpassword'
-console.log(password.length >= 5)
-console.log(username.substring(0))
-console.log(password === '')
-console.log(username.length <= 20)
-console.log(username.trim() && password.trim())
+//console.log(password.length >= 5);
+let notinclude = !password.includes(username)
+console.log(notinclude);
+console.log(username.length <= 20);
+console.log(username.trim() == username) && (password.trim() == password); //needs
