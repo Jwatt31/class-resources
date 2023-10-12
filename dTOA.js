@@ -58,46 +58,60 @@ NaN == NaN
 //true
 ///////////////////////
 
-!true
+//!true
 //false
-!false
+//!false
 //true
-!!true
+//!!true
 //true
-!!false
+//!!false
 //false
-!!0
+//!!0
 //false
-!!-0
+//!!-0
 //true
-!!1
+//!!1
 //false
-!!-1
+//!!-1
 //true
-!!0.1
+//!!0.1
 //false
-!!"hello"
+//!!"hello"
 //true
-!!""
+//!!""
 //false
-!!''
+//!!''
 //flase
-!!"false"
+//!!"false"
 //true
-!!"0"
+//!!"0"
 //true
 //////////////////
-let sample = "hello codeup"
-sample.length // 12
- sample .toUpperCase //"HELLO CODEUP"
- sample .toLowerCase(sample)//"hello codeup"
- sample .substring("hello codeup", "hello codeup students")
-sample .replace(.indexOf("c"))
-sample .replace(.indexOf("C"))
-sample .substring(.indexOf("codeup"))
-
-
-
-
+ //let sample = "hello codeup"
+//console.log(sample.length) // 12
+ //sample .toUpperCase //"HELLO CODEUP"
+ //sample .toLowerCase(sample)//"hello codeup"
+ //sample .substring("hello codeup", "hello codeup students")
+//sample .replace(.indexOf("c"))
+//sample .replace(.indexOf("C"))
+//console.log(sample .substring .indexOf("p"))
+///////////////////
+//let p= 3
+//let tLM = p * 3
+//let bB = p * 5
+//let hUR = p * 1
+//console.log(bB + hUR + tLM)
+// total = 27
+//let gOO = 400
+//let aMA = 380
+//let fAC = 350
+//console.log((gOO*6)+(aMA*4)+(fAC*10))
+///////////////////
 let username = 'codeup';
-let password = 'notastrongpassword';
+let password = 'notastrongpassword'
+console.log(password.length >= 5)
+console.log(username.substring(''))
+console.log(password === '')
+console.log(username.length <= 20)
+console.log(password.substring(' '))
+console.log(username , password === " ")
