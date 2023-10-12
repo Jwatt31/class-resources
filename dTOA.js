@@ -87,14 +87,16 @@ NaN == NaN
 //!!"0"
 //true
 //////////////////
- //let sample = "hello codeup"
+ let sample = "hello codeup"
 //console.log(sample.length) // 12
  //sample .toUpperCase //"HELLO CODEUP"
  //sample .toLowerCase(sample)//"hello codeup"
  //sample .substring("hello codeup", "hello codeup students")
 //sample .replace(.indexOf("c"))
 //sample .replace(.indexOf("C"))
-//console.log(sample .substring .indexOf("p"))
+console.log(sample.indexOf("c"))
+console.log(sample.indexOf("p"))
+console.log(sample.substring(6,12))
 ///////////////////
 //let p= 3
 //let tLM = p * 3
@@ -110,8 +112,7 @@ NaN == NaN
 let username = 'codeup';
 let password = 'notastrongpassword'
 console.log(password.length >= 5)
-console.log(username.substring(''))
+console.log(username.substring(0))
 console.log(password === '')
 console.log(username.length <= 20)
-console.log(password.substring(' '))
-console.log(username , password === " ")
+console.log(username.trim() && password.trim())
